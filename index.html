@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Sandy Studio Criativo</title>
+</head>
+
+<body>
+
+    <div class="page-transition" id="pageTransition"></div>
+
+    <header>
+        <!-- HEADER -->
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+            <div class="container">
+
+                <!-- ESQUERDA (LOGO + NOME) -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="imgs/Logo.png" alt="Logo" width="50" class="me-2 rounded-circle">
+                    <span class="fw-bold">Sandy Studio Criativo</span>
+                </a>
+
+                <!-- BOTÃO MOBILE -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- DIREITA (LINKS) -->
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav gap-lg-4 text-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="index.html">Início</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="sobre.html">Sobre</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="portfolio.html">Portfólio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="serviços.html">Serviços</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link custom-link" href="contatos.html">Contatos</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+    </header>
+
+    <main class="hero d-flex align-items-center text-center">
+        <div class="container animation-scroll-y">
+
+            <h1 class="hero-title">
+                Capturando Momentos <br>
+                Inesquecíveis
+            </h1>
+
+            <p class="hero-subtitle">
+                Transformando suas memórias mais preciosas em arte visual atemporal
+            </p>
+
+            <div class="hero-buttons d-flex justify-content-center gap-3 flex-wrap">
+
+                <a href="#" class="btn btn-dark custom-btn">
+                    Agende sua Sessão
+                </a>
+
+                <a href="#" class="btn btn-outline-light custom-btn">
+                    Veja Nosso Portfólio
+                </a>
+
+            </div>
+
+        </div>
+    </main>
+
+    <section class="about-section py-5 bg-white">
+        <div class="container animation-scroll-x">
+
+            <!-- TÍTULO -->
+            <div class="text-center mb-5">
+                <h2 class="about-title">Sobre o Sandy Studio Criativo</h2>
+                <p class="about-text">
+                    Com mais de 6 anos de experiência, o Sandy Studio Criativo é uma empresa de Marketing especializado
+                    em capturar e divulgar momentos autênticos e emocionantes.
+                    Nosso Studio trabalha com fotografia e gerenciamento de redes sociais, combinando criatividade e
+                    autenticidade, tudo isso idealizado por Sandy Cristina, fotógrafa e social media.
+                </p>
+            </div>
+
+            <!-- TÓPICOS -->
+            <div class="row text-center g-4">
+
+                <!-- ITEM 1 -->
+                <div class="col-md-4">
+                    <div class="info-box">
+                        <div class="icon-circle">
+                            ❤️
+                        </div>
+                        <h5>Paixão pela Arte</h5>
+                        <p>
+                            Cada clique é uma expressão de amor pela fotografia e respeito pela sua história única.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="col-md-4">
+                    <div class="info-box">
+                        <div class="icon-circle">
+                            💡
+                        </div>
+                        <h5>Técnica Exclusiva</h5>
+                        <p>
+                            Equipamentos de última geração e técnicas inovadoras para resultados excepcionais.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="col-md-4">
+                    <div class="info-box">
+                        <div class="icon-circle">
+                            ⏱️
+                        </div>
+                        <h5>Entrega Rápida</h5>
+                        <p>
+                            Processamento ágil sem comprometer a qualidade, com entrega em até 7 dias úteis.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="services-section py-5">
+        <div class="container animation-scroll-x">
+
+            <!-- TÍTULO -->
+            <div class="text-center mb-5">
+                <h2 class="services-title">Nossos Serviços</h2>
+                <p class="services-text">
+                    Especializados em diversos tipos de fotografia, com abordagem personalizada para cada cliente
+                </p>
+            </div>
+
+            <!-- CARDS -->
+            <div class="row g-4 animation-scroll">
+
+                <!-- CASAMENTOS -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card text-center">
+                        <div class="service-icon">💍</div>
+                        <h5>Casamentos</h5>
+                        <p>
+                            Capturando cada momento especial do seu grande dia com sensibilidade e arte.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- EVENTOS -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card text-center">
+                        <div class="service-icon">🎉</div>
+                        <h5>Eventos</h5>
+                        <p>
+                            Documentando eventos corporativos e sociais com profissionalismo e criatividade.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RETRATOS -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card text-center">
+                        <div class="service-icon">📸</div>
+                        <h5>Retratos</h5>
+                        <p>
+                            Revelando a essência e personalidade através de retratos artísticos e expressivos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ENSAIOS -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card text-center">
+                        <div class="service-icon">✨</div>
+                        <h5>Ensaios</h5>
+                        <p>
+                            Ensaios fotográficos criativos e conceituais para momentos e projetos especiais.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pre-footer py-5 animation-scroll-y">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- SOBRE -->
+                <div class="col-md-4">
+                    <h4 class="footer-title">Sandy Studio Criativo</h4>
+                    <p class="footer-text">
+                        Capturando momentos especiais com arte, marketing e profissionalismo há mais de 6 anos.
+                    </p>
+                </div>
+
+                <!-- LINKS -->
+                <div class="col-md-4">
+                    <h5 class="footer-subtitle">Links Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="serviços.html">Serviços</a></li>
+                        <li><a href="contatos.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- CONTATO + REDES -->
+                <div class="col-md-4">
+                    <h5 class="footer-subtitle">Contato</h5>
+
+                    <p class="footer-contact">📧 sandystudiocriativo@gmail.com</p>
+                    <p class="footer-contact">📱 (88) 98806-6007</p>
+                    <p class="footer-contact">📍 Mombaça, CE</p>
+
+                    <h6 class="mt-3">Redes Sociais</h6>
+
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/sstudiocriativo/" class="social-icon"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/5588988066007?text=Olá!%0AVim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços." class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center py-3">
+        <div class="container">
+            <p class="footer-text">
+                © 2026 Sandy Studio Criativo. Todos os direitos reservados. |
+                Desenvolvido com ❤️ para fotografia de qualidade
+            </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

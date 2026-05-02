@@ -1,0 +1,803 @@
+/* ============================= */
+/* ===== CONFIG GLOBAL ========= */
+/* ============================= */
+
+body {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('resources/hero-banner.jpg') no-repeat center center;
+
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 80px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ============================= */
+/* ===== NAVBAR ================ */
+/* ============================= */
+
+.custom-link {
+    position: relative;
+    font-weight: 500;
+    color: #000;
+    transition: 0.3s;
+}
+
+.custom-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: black;
+    transition: 0.3s;
+}
+
+.custom-link:hover::after {
+    width: 100%;
+}
+
+/* ============================= */
+/* ===== HERO (INDEX) ========== */
+/* ============================= */
+
+.hero {
+    height: 100vh;
+    color: white;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ============================= */
+/* ===== BOTÕES GLOBAL ========= */
+/* ============================= */
+
+.custom-btn {
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-dark.custom-btn:hover {
+    background-color: #222;
+    transform: translateY(-3px);
+}
+
+.btn-outline-light.custom-btn:hover {
+    background: white;
+    color: black;
+    transform: translateY(-3px);
+}
+
+/* ============================= */
+/* ===== INDEX - SOBRE ========= */
+/* ============================= */
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: auto;
+    color: #555;
+}
+
+.info-box {
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-8px);
+}
+
+/* Ícones */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============================= */
+/* ===== SERVIÇOS (INDEX) ====== */
+/* ============================= */
+
+.services-section {
+    background: transparent;
+    color: white;
+}
+
+.service-card {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* ============================= */
+/* ===== ABOUT PAGE ============ */
+/* ============================= */
+
+/* HERO transparente */
+.about-hero {
+    height: 400px;
+    background: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Container branco principal */
+.bg-white {
+    background: white;
+    color: black;
+}
+
+/* Títulos */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+
+.section-subtitle {
+    color: #6c757d;
+}
+
+.section-text {
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+/* Box destaque */
+.about-box {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+/* Cards */
+.card-custom {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-8px);
+}
+
+/* Equipe */
+.team-card {
+    padding: 30px;
+    border-radius: 15px;
+    background: white;
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+/* ============================= */
+/* ===== CTA (BRANCO) ========== */
+/* ============================= */
+
+.cta-section {
+    background: white;
+    color: black;
+}
+
+/* Botões CTA */
+.cta-section .btn-dark {
+    background: black;
+    color: white;
+    border: none;
+}
+
+.cta-section .btn-outline-light {
+    border: 2px solid black;
+    color: black;
+}
+
+.cta-section .btn-outline-light:hover {
+    background: black;
+    color: white;
+}
+
+/* ============================= */
+/* ===== PRE FOOTER ============ */
+/* ============================= */
+
+.pre-footer {
+    background: white;
+    color: black;
+}
+
+.footer-title {
+    font-size: 1.8rem;
+}
+
+.footer-subtitle {
+    font-size: 1.2rem;
+}
+
+.footer-text {
+    color: #555;
+}
+
+.footer-contact {
+    color: #555;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: black;
+    padding-left: 5px;
+}
+
+/* ============================= */
+/* ===== FOOTER FINAL ========== */
+/* ============================= */
+
+.footer {
+    background: white;
+    color: black;
+    font-size: 0.9rem;
+}
+
+/* ============================= */
+/* ===== RESPONSIVO ============ */
+/* ============================= */
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* ============================= */
+/* ===== PORTFOLIO PAGE ======== */
+/* ============================= */
+
+/* HERO transparente */
+.portfolio-hero {
+    height: 400px;
+    background: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* CONTEÚDO BRANCO (IMPORTANTE) */
+.portfolio-content {
+    background: white;
+    color: black;
+    padding: 60px 0;
+    margin-top: -60px;
+    /* sobe o bloco branco */
+}
+
+/* BOTÕES FILTRO */
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid black;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: 500;
+    margin: 5px;
+}
+
+/* hover */
+.filter-btn:hover {
+    background: black;
+    color: white;
+}
+
+/* ativo */
+.filter-btn.active {
+    background: black;
+    color: white;
+}
+
+/* CARDS */
+.portfolio-card {
+    overflow: hidden;
+    border-radius: 15px;
+    background: white;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* imagem */
+.portfolio-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background: #eee;
+    /* placeholder */
+}
+
+/* info */
+.portfolio-info {
+    padding: 15px;
+}
+
+/* hover card */
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================= */
+/* ===== STATS SECTION ========= */
+/* ============================= */
+
+.stats-section {
+    background: #f2f2f2;
+    /* branco mais escuro */
+    color: black;
+}
+
+/* NÚMERO */
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* TEXTO */
+.stat-text {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* BOX */
+.stat-box {
+    padding: 20px;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+/* ============================= */
+/* ===== SERVICES PAGE ========= */
+/* ============================= */
+
+/* HERO */
+.services-hero {
+    height: 400px;
+    background: transparent;
+    color: white;
+}
+
+/* CONTEÚDO */
+.services-content {
+    background: white;
+    color: black;
+    margin-top: -60px;
+    padding: 60px 0;
+}
+
+/* BOX */
+.service-box {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.service-box:hover {
+    transform: translateY(-8px);
+}
+
+/* LISTA */
+.service-box ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 15px 0;
+}
+
+.service-box ul li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* BOTÃO */
+.service-btn {
+    border: 2px solid black;
+    background: white;
+    color: black;
+    transition: 0.3s;
+}
+
+/* HOVER BOTÃO */
+.service-btn:hover {
+    background: black;
+    color: white;
+}
+
+/* ============================= */
+/* ===== PACOTES =============== */
+/* ============================= */
+
+.packages-section {
+    background: #f2f2f2;
+}
+
+/* CARD */
+.package-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* HOVER */
+.package-card:hover {
+    transform: translateY(-8px);
+}
+
+/* DESTAQUE */
+.package-card.destaque {
+    border: 2px solid black;
+}
+
+/* BADGE */
+.badge-popular {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/* LISTA */
+.package-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.package-card ul li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* BOTÃO */
+.package-btn {
+    border: 2px solid black;
+    background: white;
+    color: black;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.package-btn:hover {
+    background: black;
+    color: white;
+}
+
+/* ============================= */
+/* ===== SERVIÇOS EXTRAS ======= */
+/* ============================= */
+
+.extras-section {
+    background: #f1f1f1;
+    /* branco levemente mais escuro */
+}
+
+/* CARD */
+.extra-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    height: 100%;
+}
+
+/* HOVER */
+.extra-card:hover {
+    transform: translateY(-10px);
+}
+
+/* ÍCONE */
+.extra-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    filter: grayscale(100%);
+    /* deixa visual preto e branco */
+}
+
+/* PREÇO */
+.extra-price {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* ============================= */
+/* ===== FAQ =================== */
+/* ============================= */
+
+.faq-section {
+    background: white;
+    color: black;
+}
+
+/* ITEM */
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* BOTÃO PERGUNTA */
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+/* SINAL + */
+.faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+/* RESPOSTA */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease;
+    padding: 0 15px;
+}
+
+/* TEXTO */
+.faq-answer p {
+    margin: 15px 0;
+    color: #555;
+}
+
+/* ATIVO */
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+.faq-item.active .faq-question::after {
+    content: "-";
+}
+
+/* ============================= */
+/* ===== CTA FINAL ============= */
+/* ============================= */
+
+.final-cta {
+    background: #f1f1f1;
+    /* branco levemente mais escuro */
+    color: black;
+}
+
+/* TÍTULO */
+.cta-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* TEXTO */
+.cta-text {
+    max-width: 600px;
+    margin: auto;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* ============================= */
+/* ===== CONTATO HERO ========== */
+/* ============================= */
+
+.contact-hero {
+    height: 400px;
+    background: transparent;
+    /* segue seu padrão */
+    color: white;
+}
+
+/* TÍTULO */
+.contact-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* SUBTÍTULO */
+.contact-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ICONES */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* ÍCONE */
+.contact-icon {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.contact-icon:hover {
+    transform: scale(1.2);
+}
+
+/* ============================= */
+/* ===== ANIMAÇÕES GLOBAIS ===== */
+/* ============================= */
+
+/* Reveal ao scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade (usado no filtro) */
+.fade-in {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ============================= */
+/* ===== MELHORIAS SUAVES ====== */
+/* ============================= */
+
+/* suaviza tudo sem quebrar layout */
+button, a, .card, .portfolio-card, .service-card, 
+.card-custom, .team-card, .package-card, .extra-card {
+    transition: all 0.25s ease;
+}
+
+/* hover mais bonito */
+.portfolio-card:hover,
+.service-card:hover,
+.card-custom:hover,
+.team-card:hover,
+.package-card:hover,
+.extra-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* botões mais suaves */
+.custom-btn:hover,
+.filter-btn:hover,
+.service-btn:hover,
+.package-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ============================= */
+/* ===== FAQ MELHORADO ========= */
+/* ============================= */
+
+.faq-answer {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    opacity: 1;
+}
+
+/* ============================= */
+/* ===== INDEX SCROLL ANIMATION ========= */
+/* ============================= */
+
+.animation-scroll-x {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.6s ease;
+}
+
+.animation-scroll-x.ativo {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animation-scroll-y {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.animation-scroll-y.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
