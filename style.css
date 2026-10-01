@@ -66,7 +66,7 @@ body {
     padding: 12px 28px;
     border-radius: 10px;
     font-weight: 500;
-    column-gap: 10px;
+    gap: 15px;
     transition: 0.3s;
 }
 
